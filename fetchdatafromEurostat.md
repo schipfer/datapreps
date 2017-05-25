@@ -1,23 +1,16 @@
+# What to know about this chunk
+
+### Eurostat SDMX identification
 SDMX code /dat/DS-016893/M."REPORTER"...440131."FLOW"."UNIT"?startperiod=2012"
 
-all flows since Jan2012 reported by specified countries (residential pellet consumers)
+Wood pellets have the HS code 440131
+all flows since Jan2012 reported by specified countries
 
-Input:
-FLOW == 1 for imports and 2 for exports
-UNIT="QUANTITY_IN_100KG" or "VALUE_IN_EUROS"
+Variables to be defined:
+* FLOW == 1 for imports and 2 for exports
+* UNIT="QUANTITY_IN_100KG" or "VALUE_IN_EUROS"
+* REPORTER == A2 country codes as used in Eurostat
 
 Output:
 saves single data sets for physical imports, exports, and monetary imports, exports
 should run 8min for each data set (depending on the internet connection)
-
-then binds all data sets together and corrects following points:
-
-    dates to date format
-    cuts out all EU values (Import to AT from EU28)
-    produces a matrix that gives all specifications
-    conversion of 100kg to 0.1t
-    calculates specific import / export prices based on Eurostat data
-    deletes all Reporter = Partner trade flows that are generated throughout the process
-
-saves into working directory allflows(creationdate).rds
-saves into working directory specification matrix of all data tables
