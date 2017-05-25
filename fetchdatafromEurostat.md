@@ -13,4 +13,4 @@ Variables to be defined:
 
 Output:
 saves single data sets for physical imports, exports, and monetary imports, exports
-should run 8min for each data set (depending on the internet connection)
+should run 8min for each data set (depending on the internet connection).

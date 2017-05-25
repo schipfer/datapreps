@@ -1,5 +1,7 @@
+# Fetched Eurostat data preparation
 
-then binds all data sets together and corrects following points:
+To bind .rds data sets together and to correct following points:
+(R file is updated for 2017 paper, this md not)
 
 * dates to date format
 * cuts out all EU values (Import to AT from EU28)
