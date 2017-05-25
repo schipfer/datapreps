@@ -11,4 +11,4 @@ To bind .rds data sets together and to correct following points:
 * deletes all Reporter = Partner trade flows that are generated throughout the process
 
 saves into working directory allflows(creationdate).rds
-saves into working directory specification matrix of all data tables..
+saves into working directory specification matrix of all data tables...
